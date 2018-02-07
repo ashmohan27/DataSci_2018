@@ -1,0 +1,90 @@
+---
+title: "Week 3 practice"
+author: "Ash S"
+date: "February 6, 2018"
+output:
+  html_document :
+    toc: yes
+    toc_depth: '4'
+  pdf_document :
+      keep_text: yes
+      toc: yes
+      toc_depth: 1
+geometry: right=2.5 in
+---
+
+## R Objects
+
+R has five atomic (basic) classes of objects:
+
+* Character
+* Numeric (real numbers)
+* Integer #
+* Complex
+* Logic (TRUE/FALSE)
+
+## EXAMPLES (THE <- IS THE ASSIGNMENT OPERATOR)
+```{r}
+NAME<-"Rockville"
+X<-sqrt(2)
+N<-8L
+Z<-3 + 4i #complex
+statement<-FALSE #logic
+X
+print(X)
+
+```
+```{r}
+Y<-9 # not evaluated
+```
+
+## Integer sequence
+```{r}
+z<-1:10 #create a range 1 through 10
+z
+x <- seq(from=0, to=10, by=.5)
+x
+length(x)
+summary(x)
+
+```
+
+##Vectors: the most basic object
+
+A vector can only contain elements of the same class
+```{r}
+w<-c("name", "age", "gender")
+x<-c("TRUE", "FALSE")
+y<-c(1.5, 2.7)
+z<-1:10
+
+```
+The function vector() creates a vector
+```{r}
+x<-vector("numeric", length = 4)
+x
+```
+Index of a vector starts at 1 not 0
+```{r}
+x<-c(7,8,9)
+x[1]
+x[0] # numeric vector of length zero (i.e., empty)
+```
+
+##Implicit Coercion:
+
+```{r}
+x<-c(2.9, "b") # CHARACTER
+class(x) 
+y<-c(5, FALSE) # NUMERIC
+class(y)
+z<-c("b", TRUE) # CHARACTER
+class(z)
+
+```
+
+
+
+
+class(X)
+typeof(X)
