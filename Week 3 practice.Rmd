@@ -72,7 +72,7 @@ x[0] # numeric vector of length zero (i.e., empty)
 ```
 
 ##Implicit Coercion:
-
+If you put elements of different classes in a vector, R coerces them into one class
 ```{r}
 x<-c(2.9, "b") # CHARACTER
 class(x) 
@@ -82,6 +82,7 @@ z<-c("b", TRUE) # CHARACTER
 class(z)
 
 ```
+
 
 
 
